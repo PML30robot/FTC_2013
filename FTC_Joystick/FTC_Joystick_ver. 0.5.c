@@ -43,11 +43,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (8)) /* turn right*/
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = m_speed;
 			motor[motorD] = m_speed;
@@ -60,11 +60,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (4)) /* move forward*/
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 			motor[motorE] = m_speed;
 			motor[motorD] = m_speed;
 			motor[motorF] = speed;
@@ -76,11 +76,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (2)) /* move backward */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 			motor[motorE] = speed;
 			motor[motorD] = speed;
 			motor[motorF] = m_speed;
@@ -92,11 +92,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (1)) /* move left */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 			motor[motorE] = speed;
 			motor[motorD] = m_speed;
 			motor[motorF] = m_speed;
@@ -108,11 +108,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (3)) /* move right */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = m_speed;
 			motor[motorD] = speed;
@@ -125,11 +125,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joystick.joy1_TopHat == 0) /* slow move forward */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = slow_m_speed;
 			motor[motorD] = slow_m_speed;
@@ -142,11 +142,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joystick.joy1_TopHat == 4) /* slow move backward */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = slow_speed;
 			motor[motorD] = slow_speed;
@@ -159,11 +159,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joystick.joy1_TopHat == 6) /* slow move left */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = slow_speed;
 			motor[motorD] = slow_m_speed;
@@ -176,11 +176,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		////getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joystick.joy1_TopHat == 2) /* slow move right */
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = slow_m_speed;
 			motor[motorD] = slow_speed;
@@ -193,11 +193,11 @@ task main()
 		motor[motorF] = 0;
 		motor[motorG] = 0;
 
-		//getJoystickSettings(joystick);
+		getJoystickSettings(joystick);
 
 		while (joy1Btn (6)) /* slow turn right*/
 		{
-			////getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 
 			motor[motorE] = slow_m_speed;
 			motor[motorD] = slow_m_speed;
@@ -222,7 +222,7 @@ task main()
 
 		while (joy1Btn (9))
 		{
-			//getJoystickSettings(joystick);
+			getJoystickSettings(joystick);
 			servo[servo1] = 0; /* 0 - Full Power/ Speed Reverse; 127 - Stop; 256 - Full Power/ Speed Forward */
 		}
 
